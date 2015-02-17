@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+// implementing Fibonacci iteratively
 public class FibonacciIterative {
 	// 1,1,2,3,5,8
 	void solve(int num){

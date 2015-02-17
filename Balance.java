@@ -1,5 +1,5 @@
 import java.util.*;
-
+// Facebook's Hackerrank screening interview
 // Jin Zhe's O(N) solution
 public class Balance {
 	Node[] balancesMap;		// map of balances, where array index corresponds to id of balance

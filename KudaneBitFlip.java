@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+// http://www.careercup.com/question?id=6262507668766720
 public class KudaneBitFlip {
 	int[] arr;
 	boolean isAllOnes; // corner case: all zeroes

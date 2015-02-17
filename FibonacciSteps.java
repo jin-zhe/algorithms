@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Essentially fibonacci
+// http://www.careercup.com/question?id=3590768
 public class FibonacciSteps {
 	int n;			// number of steps
 	Integer mem[];	// memorization array where [i] holds answer for i steps left

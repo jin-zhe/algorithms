@@ -1,5 +1,5 @@
 import java.util.LinkedList;
-
+// algorithms regarding binary trees
 public class BinaryTree {
 	Node root;
 	
