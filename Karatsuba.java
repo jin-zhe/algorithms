@@ -298,6 +298,7 @@ public class Karatsuba {
 	/**
 	 * For checking: prints out the int array
 	 */
+	@SuppressWarnings("unused")
 	private static void printIntArray(int[] arr){
 		System.out.print("[printIntArray]: ");
 		for (int i: arr) System.out.print(i);
