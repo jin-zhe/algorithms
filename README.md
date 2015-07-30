@@ -16,7 +16,7 @@ My personal Java practises for some well-studied algorithms and problems commonl
  * Prints the tree level wise using BFS
  * Prints the average value for each level in tree
  * Determines the in-order successor for a node
-* Suppose there are 5 types of coins: 50-cent, 25-cent, 10-cent, 5-cent, and 1-cent. Write a program to find the total number of different ways of making changes for any amount of money in cents. [**Solution**](CoinChange.java)
+* Suppose there are 5 types of coins: 50-cent, 25-cent, 10-cent, 5-cent, and 1-cent. Write a program to find the total number of different ways of making changes for any amount of money in cents. ([*Original question*](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=615)) [**Solution**](CoinChange.java)
 * Let 1 represent ‘A’, 2 represents ‘B’, etc. Given a digit sequence, count the number of possible decodings of the given digit sequence. ([*Original question*](http://www.geeksforgeeks.org/count-possible-decodings-given-digit-sequence/)) [**Solution**](CountPossibleDecodings.java)
 * Given a number, obtain the next larger permutation and next lower permutation by swapping around the digits in the number. [**Solution**](DigitPermutations.java)
 * Implement Fibonacci in bottom-up dynamic programming fashion. [**Solution**](Fibonacci.java)
