@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
 /**
- * Write a function strstr (char[] haystack, char[] needle) to return the first index occurrence of needle in haystack.
- * If needle is not present in haystack, return -1
+ * Write a function strstr (char[] haystack, char[] needle) to return the first
+ * index occurrence of needle in haystack.  * If needle is not present in
+ * haystack, return -1
  */
 
 public class NeedleHaystack {

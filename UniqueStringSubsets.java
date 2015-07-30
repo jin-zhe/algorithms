@@ -4,7 +4,8 @@ import java.util.Scanner;
 import java.util.Vector;
 
 /**
- *  Given a string write a function which prints all the subsets of the string. Now make the function to return only unique solutions
+ *  Given a string, write a function which prints all the subsets of the string.
+ *  Now make the function to return only unique solutions
  */
 public class UniqueStringSubsets {
 	char[] arr;

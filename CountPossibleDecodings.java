@@ -1,17 +1,25 @@
 import java.util.Scanner;
 
-/** 	1: a, 2: b ... 26: z
-	Given a digit, return the count of the possible output
-	Eg.
-	'1313' returns 4: acac mac mm acm
-	'101' returns 1: ja
-	Ans: http://www.glassdoor.com/Interview/1-a-2-b-26-z-given-a-digit-return-the-count-of-the-possible-output-eg-1313-4-acac-mac-mm-acm-101-1-ja-QTN_785194.htm
- **/
-public class Alphabets {
+/**
+ * URL: http://www.geeksforgeeks.org/count-possible-decodings-given-digit-sequence/
+ * Question:
+ * Let 1 represent ‘A’, 2 represents ‘B’, etc. Given a digit sequence, count the
+ * number of possible decodings of the given digit sequence.
+ * E.g.
+ * 	Input:  digits[] = "121"
+ *	Output: 3
+ *	The possible decodings are "ABA", "AU", "LA"
+ *
+ *	Input: digits[] = "1234"
+ *	Output: 3
+ *	The possible decodings are "ABCD", "LCD", "AWD"
+ */
+
+public class CountPossibleDecodings {
 	int num;
 	Integer[] mem;
 	
-	Alphabets(int num){
+	CountPossibleDecodings(int num){
 		this.num = num;
 		mem = new Integer[num + 1];
 	}
@@ -40,7 +48,7 @@ public class Alphabets {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		(new Alphabets(sc.nextInt())).run();
+		(new CountPossibleDecodings(sc.nextInt())).run();
 		sc.close();
 	}
 

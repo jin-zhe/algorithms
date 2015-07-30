@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class LongestPalindromeSubsequence {
+public class LongestPalindromicSubsequence {
 	Integer[][] mem;	// memory hashmap
 	String string;
 	
 	/* constructor */
-	public LongestPalindromeSubsequence(String string){
+	public LongestPalindromicSubsequence(String string){
 		this.string = string;
 	}
 	
@@ -109,7 +109,7 @@ public class LongestPalindromeSubsequence {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		LongestPalindromeSubsequence LPS = new LongestPalindromeSubsequence(sc.nextLine());
+		LongestPalindromicSubsequence LPS = new LongestPalindromicSubsequence(sc.nextLine());
 		LPS.run();
 		sc.close();
 	}

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 /**
- * Implement deepcopy on the class Thing
+ * Implement deep-copy on the class Thing
  */
 public class Thing {
     String label;

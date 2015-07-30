@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class LongestPalindromeSubstring {
+public class LongestPalindromicSubstring {
 	String string;		// string to be tested
 	Boolean[][] mem;	// [startIndex][endIndex]
 	
 	// constructor
-	public LongestPalindromeSubstring(String aString){
+	public LongestPalindromicSubstring(String aString){
 		string = aString;
 	}
 	
@@ -105,7 +105,7 @@ public class LongestPalindromeSubstring {
 		int T = sc.nextInt();	// number of test cases
 		sc.nextLine();
 		for (int i=0; i<T; i++){
-			LongestPalindromeSubstring LP = new LongestPalindromeSubstring(sc.nextLine());
+			LongestPalindromicSubstring LP = new LongestPalindromicSubstring(sc.nextLine());
 			LP.run();
 		}
 		sc.close();

@@ -1,9 +1,8 @@
 import java.util.Scanner;
 
-
 public class StringCompression {
-	void run(String str){
-		if (str.isEmpty()){
+	void run(String str) {
+		if (str.isEmpty()) {
 			System.out.println("");
 			return;
 		}
@@ -13,11 +12,13 @@ public class StringCompression {
 		int freq = 1;
 		sb.append(prev);
 		
-		for (int i=1; i<str.length(); i++){
+		for (int i=1; i<str.length(); i++) {
 			// if current character same as previous, update frequency
-			if (str.charAt(i) == prev) freq++;
+			if (str.charAt(i) == prev) {
+				freq++;
+			}
 			// else append frequency to sb, update prev to current and reset frequency
-			else{
+			else {
 				sb.append(Character.forDigit(freq, 10));
 				prev = str.charAt(i);
 				sb.append(prev);

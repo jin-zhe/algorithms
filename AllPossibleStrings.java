@@ -1,5 +1,8 @@
 import java.util.Scanner;
-
+/**
+ * Given a number, return all possible strings that the number could represent
+ * if 0 -> {A, B, C}, 2 -> {D, E, F}, and so on
+ */
 public class AllPossibleStrings {
 	Character[][] arr = new Character[10][3];
 	String num;

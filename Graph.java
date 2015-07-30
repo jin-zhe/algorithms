@@ -6,13 +6,12 @@ import java.util.LinkedList;
 import java.util.PriorityQueue;
 
 /**
- * @author Kilroy
  * A collection of graph algorithms:
  * • BFS
  * • DFS
  * • Kruskal (MST)
  * • Prim (MST)
- * • modified Dijkstra (SSSP)
+ * • Modified Dijkstra (SSSP)
  * • Bellman-Ford (SSSP)
  * • Floyd-Warshall (APSP)
  * 

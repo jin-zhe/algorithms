@@ -1,15 +1,18 @@
-// Given two sorted arrays and a number k, find the kth largest number in the union of the two arrays. Do it in place
+/**
+ * Given two sorted arrays and a number k, find the kth largest number in the
+ * union of the two arrays. Do it in place
+ */
 public class SortedArrayUnion {
 	int[] arr1;
 	int[] arr2;
 	
-	SortedArrayUnion(int[] arr1, int[] arr2){
+	SortedArrayUnion(int[] arr1, int[] arr2) {
 		this.arr1 = arr1;
 		this.arr2 = arr2;
 	}
 	
 	// O(K)
-	int solve(int k){
+	int solve(int k) {
 		// start iterating from the last index of arr1 and arr2 respectively
 		int i = arr1.length - 1;
 		int j = arr2.length - 1;
@@ -17,25 +20,25 @@ public class SortedArrayUnion {
 		Integer KMax = null;
 		
 		// loop runs exactly k times
-		while(k>0){
+		while(k>0) {
 			// if either has reached the end of its list, progress down the other list
-			if (i<0 || j<0){
-				if (i<0){
+			if (i<0 || j<0) {
+				if (i<0) {
 					KMax = arr2[j];
 					j--;
 				}
-				if (j<0){
+				if (j<0) {
 					KMax = arr1[i];
 					i--;
 				}
 			}
 			// else, always choose the larger element and progress down chosen list
-			else{
-				if (arr1[i] > arr2[j]){
+			else {
+				if (arr1[i] > arr2[j]) {
 					KMax = arr1[i];
 					i--;	// progress arr1
 				}
-				else if (arr2[j] > arr1[i]){
+				else if (arr2[j] > arr1[i]) {
 					KMax = arr2[j];
 					j--;	// progress arr2
 				}
@@ -45,7 +48,7 @@ public class SortedArrayUnion {
 		return KMax;
 	}
 	
-	void run(int k){
+	void run(int k) {
 		System.out.println(solve(k));
 	}
 	

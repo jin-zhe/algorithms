@@ -1,7 +1,6 @@
 import java.util.Arrays;
 
 /**
- * @author Kilroy
  * This is an implementation of the Mergesort
  */
 public class MergeSort {

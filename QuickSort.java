@@ -2,7 +2,6 @@ import java.util.Arrays;
 import java.util.Random;
 
 /**
- * @author Kilroy
  * This is an implementation of the Quicksort algorithm
  */
 public class QuickSort {

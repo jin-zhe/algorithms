@@ -1,6 +1,11 @@
 import java.util.Scanner;
-
-// http://www.careercup.com/question?id=3590768
+/**
+ * URL: http://www.careercup.com/question?id=3590768
+ * Problem Description:
+ * Given n stairs, how many number of ways can you climb if u use either 1 or 2
+ * at a time?
+ *
+ */
 public class FibonacciSteps {
 	int n;			// number of steps
 	Integer mem[];	// memorization array where [i] holds answer for i steps left
