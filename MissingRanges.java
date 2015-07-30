@@ -1,10 +1,13 @@
 /**
- * Given a sorted list of numbers, write a function to return a string representing
- * the missing numbers from 0 to 99 inclusive.
+ * This question is taken from Leetcode's Q163
+ * URL: https://leetcode.com/problems/missing-ranges/
+ * Given a sorted list of numbers, write a function to return a string
+ * representing the missing numbers from 0 to 99 inclusive.
  * e.g.
- * 	Given [0, 1, 2, 3, 5, 40, 90], the function should return "4, 6-39, 41-89, 91-99"
+ * 	Given [0, 1, 2, 3, 5, 40, 90]
+ * 	The function should return "4, 6-39, 41-89, 91-99"
  */
-public class MissingGaps {
+public class MissingRanges {
 
 	public static void main(String[] args) {
 		int[] arr = {0, 1, 2, 3, 5, 40, 90};
