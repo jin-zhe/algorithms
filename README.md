@@ -55,7 +55,7 @@ My personal Java practises for some well-studied algorithms and problems commonl
 * Given two sorted arrays and a number k, find the kth largest number in the union of the two arrays. Do it in place. [**Solution**](SortedArrayUnion.java)
 * Implement square-root method wihtout using the Math library. [**Solution**](Sqrt.java)
 * One steps through integer points of the straight line. The length of a step must be nonnegative and can be by one bigger than, equal to, or by one smaller than the length of the previous step. What is the minimum number of steps in order to get from x to y? The length of the first and the last step must be 1. ([*Original question*](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=787)) [**Solution**](Steps.java)
-* Given a string `"aaabbbcc"`, compress it into `"a3b3c2` in-place. ([*Original question*](http://www.careercup.com/question?id=7449675)) [**Solution**](StringCompression.java)
+* Given a string `"aaabbbcc"`, compress it into `"a3b3c2"` in-place. ([*Original question*](http://www.careercup.com/question?id=7449675)) [**Solution**](StringCompression.java)
 * Given a string, print out all its permutations. [**Solution**](StringPermutations.java)
 * Given an array of integers, return all possible subsets of length n. [**Solution**](SubsetsN.java)
 * Implement a deep-copy method for the class Thing which has a list of Thing objects. [**Solution**](Thing.java)
