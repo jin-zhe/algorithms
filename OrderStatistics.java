@@ -1,15 +1,39 @@
 import java.util.Random;
 
 /**
- * Given an array of numbers, return the Kth smallest number in the list
- * (where 1st smallest refers to the smallest item)
+ * Comprises of the following algorithms:
+ * 	get Kth smallest
+ * 	get median
  */
-public class KthSmallest {
+public class OrderStatistics {
 
 	public static void main(String[] args) {
 		int[] arr = {92, 23, 21, 5, 57, 63, 7, 12, 21, 43, 25, 24, 1};
 		int k = 6;	// kth smallest or equivalently k-1 rank
-		System.out.println(getRankItem(arr, 0, arr.length, k-1));
+		System.out.println(k + "th smallest: " + getKthSmallest(arr, k));
+		System.out.println("Median: " + getMedian(arr));
+	}
+	
+	/**
+	 * Given an array of numbers, return the Kth smallest number in the list
+	 * (where 1st smallest refers to the smallest item)
+	 * @param arr	given array
+	 * @return		Kth smallest item
+	 */
+	public static int getKthSmallest (int[] arr, int k) {
+		return getRankItem(arr, 0, arr.length, k-1);
+	}
+	
+	public static double getMedian(int[] arr) {
+		/* odd number of items */
+		if (arr.length % 2 != 0) {
+			return getRankItem(arr, 0, arr.length, arr.length/2);
+		}
+		
+		/* even number of items */
+		int val1 = getRankItem(arr, 0, arr.length, arr.length/2);
+		int val2 = getRankItem(arr, arr.length/2 + 1, arr.length, arr.length/2 + 1);
+		return (double) (val1 + val2)/2;
 	}
 	
 	/**
@@ -18,8 +42,9 @@ public class KthSmallest {
 	 * @param arr	the array of interest
 	 * @param start	start point of subarray (inclusive)
 	 * @param end	end point of subarray (exclusive)
-	 * @param rank	the rank of interest in the array
-	 * @return
+	 * @param rank	the rank of interest in the array. Note that this is
+	 * 				absolute and not relative to the current range
+	 * @return		the item at rank
 	 */
 	static int getRankItem(int[] arr, int start, int end, int rank) {
 		/* if rank exceeds range */
