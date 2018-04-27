@@ -34,7 +34,7 @@ My personal Java practises for some well-studied algorithms and problems commonl
 * You are given an M by N matrix containing only the characters 'P' and 'T'. You can flip the characters in any number of columns. I.e. 'P' becomes 'T' and 'T' becomes 'P' for all characters under that column. Your aim is to maximize the number of rows for which all the characters are the same. [**Solution**](HomogeneousRows.java)
 * Implement integer division without using `/` or `%` in O(logN). [**Solution**](IntegerDivision.java)
 * You are given a binary array with N elements: `d[0], d[1], ... d[N - 1]`. You can perform AT MOST one move on the array: choose any two integers and flip all the elements between (and including) them. What is the maximum number of '1'-bits which you can obtain in the final bit-string? ([*Original question*](http://www.careercup.com/question?id=6262507668766720)) [**Solution**](KadaneBitFlip.java)
-* Implement Karatsuba's multiplication algorithm. *Just a practice. No way this question will be tested* [**Solution**](Karatsuba.java)
+* Implement Karatsuba's multiplication algorithm. *(Just a practice. No way this question will be tested)* [**Solution**](Karatsuba.java)
 * Implement Knuth shuffle. [**Solution**](KnuthShuffle.java)
 * Given two strings, find the Longest Common Subsequence between them. [**Solution**](LongestCommonSubsequence.java)
 * Given two strings, find the Longest Common Substring between them. [**Solution**](LongestCommonSubstring.java)
